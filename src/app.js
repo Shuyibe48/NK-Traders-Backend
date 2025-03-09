@@ -12,7 +12,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://nk-traders.vercel.app"
+      "https://nk-traders-ujrz.vercel.app"
     ],
     credentials: true,
   })
