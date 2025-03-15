@@ -22,8 +22,6 @@ const seedSuperAdmin = async () => {
     // Check if super admin already exists
     const isSuperAdminExists = await User.findOne({ role: USER_ROLE.superAdmin }).session(session);
 
-    console.log('super admin: >>>>>>>', isSuperAdminExists);
-
     if (!isSuperAdminExists) {
       // Create new user
       const newUser = await User.create([superUser], { session });
